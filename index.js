@@ -5,8 +5,8 @@ const { Base64Decode } = require('base64-stream')
 var nodemailer = require('nodemailer');
 const {simpleParser} = require('mailparser');
 
-const email = 'brunycardoso1992@outlook.com'
-const emailPass = 'aekpgfrfmmggdljk'
+const email = process.env.EMAIL
+const emailPass = process.env.EMAIL_PASS
 
 var imap = new Imap({
   user: email,
